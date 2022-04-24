@@ -1,8 +1,6 @@
 import pdb
-# from models.location import Location
-# from models.user import User
-# from models.visit import Visit
+from models.member import Member
+from models.exercise_class import Excercise_class
 
-# import repositories.location_repository as location_repository
-# import repositories.user_repository as user_repository
-# import repositories.visit_repository as visit_repository
+import repositories.member_repository as member_repository
+import repositories.exercise_class_repository as exercise_class_repository
