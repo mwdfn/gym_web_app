@@ -6,3 +6,9 @@ import repositories.exercise_class_repository as exercise_class_repository
 
 booking_classes_blueprint = Blueprint("booking_classes", __name__)
 
+# Index
+@booking_classes_blueprint.route("/bookings/")
+def bookings():
+    bookings = booking_class_repository.select_all()
+    return render_template("bookings/index.html", bookings=bookings)
+
