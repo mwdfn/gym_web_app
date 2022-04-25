@@ -4,7 +4,7 @@ from models.member import Member
 # import repositories.member_repository as member_repository
 
 def save(exercise_class):
-    sql = "INSERT INTO exercise_classes (title, date, instructor, start_time, finish) VALUES (%s, %s, %s, %s) RETURNING id"
+    sql = "INSERT INTO exercise_classes (title, instructor, date, start_time, finish) VALUES (%s, %s, %s, %s, %s) RETURNING id"
     values = [exercise_class.title, exercise_class.instructor, exercise_class.date, exercise_class.start_time, exercise_class.finish]
     results = run_sql(sql, values)
     id = results[0]['id']
