@@ -14,10 +14,21 @@ exercise_class_repository.delete_all()
 member_1 = Member("Dave Smith", 23, "Male")
 member_repository.save(member_1)
 
+member_2 = Member("Sarah Smith", 24, "Female")
+member_repository.save(member_2)
+
 exercise_class_1 = ExerciseClass("Body Attack", "Joe Mills", "18/05/2022", "18:00", "19:00")
 exercise_class_repository.save(exercise_class_1)
 
+exercise_class_2 = ExerciseClass("Body Balance", "Trevor Andrews", "10/05/2022", "17:00", "18:00")
+exercise_class_repository.save(exercise_class_2)
+
 booking_class_1 = BookingClass(exercise_class_1, member_1)
 booking_class_repository.save(booking_class_1)
+
+booking_class_2 = BookingClass(exercise_class_2, member_2)
+booking_class_repository.save(booking_class_2)
+
+
 
 

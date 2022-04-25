@@ -5,9 +5,9 @@ import repositories.exercise_class_repository as exercise_class_repository
 
 exercise_classes_blueprint = Blueprint("exercise_classes", __name__)
 
-
-@exercise_classes_blueprint.route("/exercise-classes")
+# Index
+@exercise_classes_blueprint.route("/exerciseclasses/")
 def exercise_classes():
     exercise_classes = exercise_class_repository.select_all()
-    return render_template("exercise-classes/index.html", exercise_classes=exercise_classes)
+    return render_template("exerciseclasses/index.html", exercise_classes=exercise_classes)
 
