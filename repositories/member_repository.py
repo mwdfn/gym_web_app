@@ -1,5 +1,5 @@
 from db.run_sql import run_sql
-from models.exercise_class import Excercise_class
+from models.exercise_class import ExerciseClass
 from models.member import Member
 # import repositories.exercise_class_repository as exercise_class_repository
 

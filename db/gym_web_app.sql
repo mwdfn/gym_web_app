@@ -19,7 +19,7 @@ CREATE TABLE exercise_classes (
     finish VARCHAR(255)
 );
 
-CREATE TABLE attending_classes (
+CREATE TABLE booking_classes (
     id SERIAL PRIMARY KEY,
     exercise_class_id SERIAL REFERENCES exercise_classes(id),
     member_id SERIAL REFERENCES members(id)

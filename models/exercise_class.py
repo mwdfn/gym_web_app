@@ -1,4 +1,4 @@
-class Excercise_class:
+class ExerciseClass:
     def __init__(self, input_title, input_instructor, input_date, input_start_time, input_finish, id = None):
         self.title = input_title
         self.instructor = input_instructor
