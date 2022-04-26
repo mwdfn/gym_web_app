@@ -6,15 +6,15 @@
 <form action="/members/{{ member.id }}" method="POST">
     <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="{{ exercise_class.name }}">
+        <input type="text" id="name" name="name" value="{{ member.name }}">
     </div>
     <div>
         <label for="age">Age:</label>
-        <input type="text" id="age" name="age" value="{{ exercise_class.age }}">
+        <input type="text" id="age" name="age" value="{{ member.age }}">
     </div>
     <div>
         <label for="gender">Gender:</label>
-        <input type="text" id="gender" name="gender" value="{{ exercise_class.gender }}">
+        <input type="text" id="gender" name="gender" value="{{ member.gender }}">
     </div>
     <div>
         <input type="submit">

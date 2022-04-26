@@ -26,3 +26,28 @@ def create_class():
     new_member = Member(name, age, gender)
     member_repository.save(new_member)
     return redirect("/members")
+
+
+# Edit a member
+@members_blueprint.route("/members/<id>/edit")
+def edit_member(id):
+    member = member_repository.select(id)
+    return render_template('members/edit.html', member=member)
+
+
+# Upade a member
+@members_blueprint.route("/members/<id>", methods=["POST"])
+def update_member(id):
+    name= request.form["name"]
+    age = request.form["age"]
+    gender = request.form["gender"]
+    member = Member(name, age, gender, id)
+    member_repository.update(member)
+    return redirect("/members")
+
+
+# Delete a member
+@members_blueprint.route("/members/<id>/delete", methods=["POST"])
+def delete_member(id):
+    member_repository.delete(id)
+    return redirect("/members")

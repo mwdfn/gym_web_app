@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+
 <h2>{{ exercise_class.title }}</h2>
 <p>Instructor: {{ exercise_class.instructor }}</p>
 <p>Date: {{ exercise_class.date }}</p>
@@ -10,6 +13,8 @@
     <li>{{ booking.name }}</li>
     {% endfor %}
 </ul>
+
+{% endblock %}
 
 
 
