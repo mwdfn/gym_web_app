@@ -16,7 +16,7 @@ def select_all():
     sql = "SELECT * FROM members"
     results = run_sql(sql)
     for result in results:
-        member = Member(result["name"], result["age"], result["gender"])
+        member = Member(result["name"], result["age"], result["gender"], result["id"])
         members.append(member)
     return members
 
@@ -25,7 +25,7 @@ def select(id):
     sql = "SELECT * FROM members WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
-    member = Member(result["name"], result["age"], result["gender"])
+    member = Member(result["name"], result["age"], result["gender"], result["id"])
     return member
 
 

@@ -23,6 +23,7 @@ def select_all():
         member = member_repository.select(result["member_id"])
         booking_class = BookingClass(exercise_class, member, result["id"])
         booking_classes.append(booking_class)
+    print(booking_classes)
     return booking_classes
 
 

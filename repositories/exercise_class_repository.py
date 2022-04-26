@@ -16,7 +16,7 @@ def select_all():
     sql = "SELECT * FROM exercise_classes"
     results = run_sql(sql)
     for result in results:
-        exercise_class = ExerciseClass(result["title"], result["instructor"], result["date"], result["start_time"], result["finish"])
+        exercise_class = ExerciseClass(result["title"], result["instructor"], result["date"], result["start_time"], result["finish"], result["id"])
         exercise_classes.append(exercise_class)
     return exercise_classes
 
@@ -25,7 +25,7 @@ def select(id):
     sql = "SELECT * FROM exercise_classes WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
-    exercise_class = ExerciseClass(result["title"], result["instructor"], result["date"], result["start_time"], result["finish"])
+    exercise_class = ExerciseClass(result["title"], result["instructor"], result["date"], result["start_time"], result["finish"], result["id"])
     return exercise_class
 
 
