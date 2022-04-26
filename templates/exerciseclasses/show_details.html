@@ -1,0 +1,15 @@
+<h2>{{ exercise_class.title }}</h2>
+<p>Instructor: {{ exercise_class.instructor }}</p>
+<p>Date: {{ exercise_class.date }}</p>
+<p>Start time: {{ exercise_class.start_time }}</p>
+<p>Finish: {{ exercise_class.finish }}</p>
+
+<h3>Member Bookings</h3>
+<ul>
+    {% for booking in bookings %}
+    <li>{{ booking.name }}</li>
+    {% endfor %}
+</ul>
+
+
+

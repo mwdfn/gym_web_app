@@ -1,7 +1,7 @@
 from db.run_sql import run_sql
 from models.exercise_class import ExerciseClass
 from models.member import Member
-# import repositories.member_repository as member_repository
+
 
 def save(exercise_class):
     sql = "INSERT INTO exercise_classes (title, instructor, date, start_time, finish) VALUES (%s, %s, %s, %s, %s) RETURNING id"
@@ -40,8 +40,20 @@ def delete(id):
     run_sql(sql, values)
 
 
-def update(exercise_classes):
-    sql = "UPDATE exercise_classes SET (title, instrcutor, date, start_time, finish) = (%s, %s, %s, %s, %s) WHERE id = %s"
-    values = [exercise_classes.title, exercise_classes.instructor, exercise_classes.date, exercise_classes.start_time, exercise_classes.finish]
+def update(exercise_class):
+    sql = "UPDATE exercise_classes SET (title, instructor, date, start_time, finish) = (%s, %s, %s, %s, %s) WHERE id = %s"
+    values = [exercise_class.title, exercise_class.instructor, exercise_class.date, exercise_class.start_time, exercise_class.finish, exercise_class.id]
     run_sql(sql, values)
+
+
+def select_bookings_in_class(id):
+    bookings = []
+    sql = "SELECT members.* FROM members INNER JOIN booking_classes ON booking_classes.member_id = members.id WHERE booking_classes.exercise_class_id = %s"
+    values = [id]
+    results = run_sql(sql, values)
+    print(results)
+    for result in results:
+        member = Member(result["name"], result["age"], result["gender"])
+        bookings.append(member)
+    return bookings
 
