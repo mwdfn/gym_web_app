@@ -10,3 +10,19 @@ members_blueprint = Blueprint("members", __name__)
 def members():
     members = member_repository.select_all()
     return render_template("members/index.html", members=members)
+
+# New exercise class
+@members_blueprint.route("/members/new")
+def new_class():
+    return render_template("members/new.html")
+    
+
+# Create an exercise class
+@members_blueprint.route("/members", methods=["POST"])
+def create_class():
+    name = request.form["name"]
+    age = request.form["age"]
+    gender = request.form["gender"]
+    new_member = Member(name, age, gender)
+    member_repository.save(new_member)
+    return redirect("/members")
