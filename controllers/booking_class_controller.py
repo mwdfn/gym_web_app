@@ -42,7 +42,7 @@ def edit_booking(id):
     booking = booking_class_repository.select(id)
     members = member_repository.select_all()
     exercise_classes = exercise_class_repository.select_all()
-    return render_template('bookings/edit.html', booking=booking, memebers=members, exercise_classes=exercise_classes)
+    return render_template('bookings/edit.html', booking=booking, members=members, exercise_classes=exercise_classes)
 
 
 # Update a booking
@@ -57,8 +57,8 @@ def update_booking(id):
     return redirect("/bookings")
 
 
-# # Delete a booking
-# @booking_classes_blueprint.route("/bookings/<id>/delete", methods=["POST"])
-# def delete_booking(id):
-#     booking_class_repository.delete(id)
-#     return redirect("/bookings")
+# Delete a booking
+@booking_classes_blueprint.route("/bookings/<id>/delete", methods=["POST"])
+def delete_booking(id):
+    booking_class_repository.delete(id)
+    return redirect("/bookings")

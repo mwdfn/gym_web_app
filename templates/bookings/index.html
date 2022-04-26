@@ -14,7 +14,8 @@
         </form>#}
     </section>
     <div>
-        <a href="/bookings/{{ booking.id }}/edit">Edit</a>
+        <form action="/bookings/{{ booking.id }}/edit" method="GET">    <input type="submit" value="Edit"></form>
     </div>
+
 {% endfor %}
 {% endblock %}

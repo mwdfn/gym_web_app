@@ -1,13 +1,12 @@
+DROP TABLE booking_classes;
+DROP TABLE exercise_classes;
 DROP TABLE members;
-DROP TABLE classes;
-DROP TABLE attending_classes;
-
 
 CREATE TABLE members (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     age INT,
-    gender VARCHAR(255)
+    gender VARCHAR(255) 
 );
 
 CREATE TABLE exercise_classes (
@@ -21,6 +20,6 @@ CREATE TABLE exercise_classes (
 
 CREATE TABLE booking_classes (
     id SERIAL PRIMARY KEY,
-    exercise_class_id SERIAL REFERENCES exercise_classes(id),
-    member_id SERIAL REFERENCES members(id)
+    exercise_class_id SERIAL REFERENCES exercise_classes(id) ON DELETE CASCADE,
+    member_id SERIAL REFERENCES members(id) ON DELETE CASCADE
 );
