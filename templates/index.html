@@ -1,36 +1,52 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<body>
-    <div class="homecontainer">
-        <ul>
-            Members
-            <ul>
-                <ul><a href="/members">All Members</a></ul>
-                <ul><a href="/members/new">Add Members</a></ul>
-            </ul>
-        </ul>
-        <ul class="homemenu">
-            Classes
-            <ul>
-                <ul><a href="/exerciseclasses">All Classes</a></ul>
-                <ul><a href="/exerciseclasses/new">Add Classes</a></ul>
-            </ul>
-        </ul>
-        <ul class="homemenu">
-            Bookings
-            <ul>
-                <ul><a href="/bookings">All Bookings</a></ul>
-                <ul><a href="/bookings/new">Add Bookings</a></ul>
-            </ul>
-        </ul>
-        <ul class="homemenu">
-            Staff
-            <ul>
-                <ul><a href="/">All Staff</a></ul>
-                <ul><a href="/">Add Staff</a></ul>
-            </ul>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Gym App</title>
+</head>
+<body class="container1">
+    <div>
+        <header class="header1">
+            <h1>Gym App</h1>
+        </header>
     </div>
+        <nav class="homelinks">
+            <ul class="homemenu" id="memberhome">
+                Members
+                <ul>
+                    <ul><a href="/members">All Members</a></ul>
+                    <ul><a href="/members/new">Add Members</a></ul>
+                </ul>
+            </ul>
+            <ul class="homemenu" id="classhome">
+                Classes
+                <ul>
+                    <ul><a href="/exerciseclasses">All Classes</a></ul>
+                    <ul><a href="/exerciseclasses/new">Add Classes</a></ul>
+                </ul>
+            </ul>
+            <ul class="homemenu" id="bookinghome">
+                Bookings
+                <ul>
+                    <ul><a href="/bookings">All Bookings</a></ul>
+                    <ul><a href="/bookings/new">Add Bookings</a></ul>
+                </ul>
+            </ul>
+            <ul class="homemenu" id="staffhome">
+                Staff
+                <ul>
+                    <ul><a href="/">All Staff</a></ul>
+                    <ul><a href="/">Add Staff</a></ul>
+                </ul>
+            </ul>
+        </nav>
+    <footer class="footer1">
+        © Gym App
+    </footer>
 </body>
-{% endblock %}
+
