@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <title>Gym App</title>
 </head>
 <body>
-    <header>
-        <h1>Gym App</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li>
-                    Exercise Classes
-                    <ul>
-                        <li><a href="/exerciseclasses">All</a></li>
-                        <li><a href="/exerciseclasses/new">Add</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Bookings
-                    <ul>
-                        <li><a href="/bookings">All</a></li>
-                        <li><a href="/bookings/new">Add</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Members
-                    <ul>
-                        <li><a href="/members">All</a></li>
-                        <li><a href="/members/new">Add</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    <div class="container">
-        {% block content %}
+    <div class=basecontainer>
+        <header class="headercontainer">
+            <h1>Gym App</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        Members
+                        <ul>
+                            <li><a href="/members">All</a></li>
+                            <li><a href="/members/new">Add</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Classes
+                        <ul>
+                            <li><a href="/exerciseclasses">All</a></li>
+                            <li><a href="/exerciseclasses/new">Add</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bookings
+                        <ul>
+                            <li><a href="/bookings">All</a></li>
+                            <li><a href="/bookings/new">Add</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Staff
+                        <ul>
+                            <li><a href="/bookings">All</a></li>
+                            <li><a href="/bookings/new">Add</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    <footer class="footercontainer">
+        {% block footer %}
         {% endblock %}
+    </footer>
     </div>
 </body>
 </html>

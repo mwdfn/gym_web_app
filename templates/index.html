@@ -1,5 +1,38 @@
 {% extends "base.html" %}
 
+
 <body>
-    I'm Ants-In-My-Eyes Johnson.
+{% block content %}
+    <nav class="homenav">
+        <ul class="membershome">
+            Members
+            <ul>
+                <ul><a href="/members">All Members</a></ul>
+                <ul><a href="/members/new">Add Members</a></ul>
+            </ul>
+        </ul>
+        <ul class="classeshome">
+            Classes
+            <ul>
+                <ul><a href="/exerciseclasses">All Classes</a></ul>
+                <ul><a href="/exerciseclasses/new">Add Classes</a></ul>
+            </ul>
+        </ul>
+        <ul class="bookingshome">
+            Bookings
+            <ul>
+                <ul><a href="/bookings">All Bookings</a></ul>
+                <ul><a href="/bookings/new">Add Bookings</a></ul>
+            </ul>
+        </ul>
+        <ul class="staffhome">
+            Staff
+            <ul>
+                <ul><a href="/">All Staff</a></ul>
+                <ul><a href="/">Add Staff</a></ul>
+            </ul>
+        </ul>
+    </nav>
+{% endblock %}
 </body>
+

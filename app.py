@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 
+
 from controllers.member_controller import members_blueprint
 from controllers.exercise_class_controller import exercise_classes_blueprint
 from controllers.booking_class_controller import booking_classes_blueprint
