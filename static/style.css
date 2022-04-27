@@ -1,22 +1,23 @@
 * {
     font-family: 'Bebas Neue', cursive;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .container1 {
     display: grid;
     height: 100vh;
-    grid-template-rows: 0.2fr 0.5fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "header1 header1 header1 header1"
     "memberhome classhome bookinghome staffhome"
-    "footer1 footer1 footer1 footer1"
-;
+    "footer1 footer1 footer1 footer1";
 }
 
 .header1{
     background-color: hotpink;
-    grid-area: header;
+    grid-area: header1;
 }
 
 #memberhome {
@@ -37,5 +38,5 @@
 
 .footer1{
     background-color: yellow;
-    grid-area: footer;
+    grid-area: footer1;
 }
