@@ -4,39 +4,62 @@
     margin: 0 auto;
 }
 
-.container1 {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header1 header1 header1 header1"
-    "memberhome classhome bookinghome staffhome"
-    "footer1 footer1 footer1 footer1";
-}
-
+/* home page styling */
 .header1{
-    background-color: hotpink;
-    grid-area: header1;
+    padding: 20px;
+    padding-top: 50px;
+    background-color: #0d0d0d;
+    color: #ffffff;
 }
 
-#memberhome {
-    grid-area: memberhome;
-}
-
-#classhome {
-    grid-area: classhome;
-}
-
-#bookinghome {
-    grid-area: bookinghome;
-}
-
-#staffhome {
-    grid-area: staffhome;
+.homelinks {
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 180px;
 }
 
 .footer1{
-    background-color: yellow;
-    grid-area: footer1;
+    padding: 25px;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
 }
+
+#memberhome {
+    background-color: #F2C335;
+    margin: 10px;
+    float: center;
+    font-size: 15pt;
+}
+
+#classhome {
+    background-color: #F2C335;
+    margin: 10px;
+    float: center;
+    font-size: 15pt;
+}
+
+#bookinghome {
+    background-color: #F2C335;
+    margin: 10px;
+    float: center;
+    font-size: 15pt;
+}
+
+#staffhome {
+    background-color: #F2C335;
+    margin: 10px;
+    float: center;
+    font-size: 15pt;
+}
+
+.container1{
+    background-image: url("https://images.unsplash.com/photo-1540496905036-5937c10647cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+}
+
+/* base css */
+.header{
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+

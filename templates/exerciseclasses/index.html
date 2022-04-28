@@ -2,7 +2,7 @@
 {% block content %}
 
 <h2>Exercise Classes</h2>
-
+<div class="classindex">
 {% for exercise_class in exercise_classes %}
 
     <section>
@@ -26,6 +26,7 @@
             <input type="submit" value="Delete"></form>
         </ul>
     </div>
+</div>
 {% endfor %}
 {% endblock %}
 

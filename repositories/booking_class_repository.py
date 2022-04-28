@@ -52,3 +52,4 @@ def update(booking_class):
     sql = "UPDATE booking_classes SET (exercise_class_id, member_id) = (%s, %s) WHERE id = %s"
     values = [booking_class.exercise_class.id, booking_class.member.id, booking_class.id]
     run_sql(sql, values)
+
