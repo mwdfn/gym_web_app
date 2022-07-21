@@ -2,6 +2,7 @@ DROP TABLE booking_classes;
 DROP TABLE exercise_classes;
 DROP TABLE members;
 
+
 CREATE TABLE members (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
