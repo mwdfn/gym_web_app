@@ -1,0 +1,40 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.baseContainer {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "baseHead"
+    "."
+    "baseFoot";
+}
+
+.base-header {
+    padding: 1vw;
+    padding-left: 10vw;
+    background: radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#2c2c2c 4px, transparent 4px) 0px -2px / 29px 29px, linear-gradient(90deg, #2c2c2c 4px, #0d0d0d 4px) -2px 0px / 29px 29px #0d0d0d;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    width: 100vw;
+    height: auto;
+    grid-area: baseHead; 
+}
+
+.base-footer {
+    padding: 1vw;
+    background: radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#2c2c2c 4px, transparent 4px) 0px -2px / 29px 29px, linear-gradient(90deg, #2c2c2c 4px, #0d0d0d 4px) -2px 0px / 29px 29px #0d0d0d;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    grid-area: baseFoot;
+}

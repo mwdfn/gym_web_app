@@ -5,57 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='baseStyle.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Gym App</title>
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>Gym App</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="/">Home</a></li>
-                    <li id="members">
-                        Members
-                        <ul>
-                            <li><a href="/members">All</a></li>
-                            <li><a href="/members/new">Add</a></li>
-                        </ul>
-                    </li>
-                    <li id="classes">
-                        Classes
-                        <ul>
-                            <li><a href="/exerciseclasses">All</a></li>
-                            <li><a href="/exerciseclasses/new">Add</a></li>
-                        </ul>
-                    </li>
-                    <li id="bookings">
-                        Bookings
-                        <ul>
-                            <li><a href="/bookings">All</a></li>
-                            <li><a href="/bookings/new">Add</a></li>
-                        </ul>
-                    </li>
-                    <li id="staff">
-                        Staff
-                        <ul>
-                            <li><a href="/">All</a></li>
-                            <li><a href="/">Add</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="secondcontainer">
-            {% block content %}
-            {% endblock %}
-        </div>
-        <footer class="footer">
-            {% block footer %}
-            © Gym App
-            {% endblock %}
-        </footer>
+<body class="baseContainer">
+    <header class="base-header">
+        <h1>Gym App</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li id="members">
+                    Members
+                    <ul>
+                        <li><a href="/members">All</a></li>
+                        <li><a href="/members/new">Add</a></li>
+                    </ul>
+                </li>
+                <li id="classes">
+                    Classes
+                    <ul>
+                        <li><a href="/exerciseclasses">All</a></li>
+                        <li><a href="/exerciseclasses/new">Add</a></li>
+                    </ul>
+                </li>
+                <li id="bookings">
+                    Bookings
+                    <ul>
+                        <li><a href="/bookings">All</a></li>
+                        <li><a href="/bookings/new">Add</a></li>
+                    </ul>
+                </li>
+                <li id="staff">
+                    Staff
+                    <ul>
+                        <li><a href="/">All</a></li>
+                        <li><a href="/">Add</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="secondcontainer">
+        {% block content %}
+        {% endblock %}
     </div>
+    <footer class=".base-footer">
+        {% block footer %}
+        © Gym App
+        {% endblock %}
+    </footer>
 </body>
 </html>
