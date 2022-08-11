@@ -8,11 +8,12 @@
 
 .container1{
     background-image: url("https://images.unsplash.com/photo-1540496905036-5937c10647cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: grid; 
     justify-content: center;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
     grid-template-areas: 
     "header1 header1 header1 header1"
     "homeLink homeLink homeLink homeLink"
@@ -22,7 +23,6 @@
 /* home page styling */
 .header1{
     padding: 1vw;
-    /* padding-top: 50px; */
     background-color: #0d0d0d;
     color: #ffffff;
     width: 100vw;
@@ -56,28 +56,36 @@
 
 #member-home {
     background-color: #F2C335;
+    opacity: 0.9;
     margin: 1em;
+    padding: 1em 1em 18em;
     font-size: 15pt;
     grid-area: member;
 }
 
 #class-home {
     background-color: #F2C335;
+    opacity: 0.9;
     margin: 1em;
+    padding: 1em 1em 18em;
     font-size: 15pt;
     grid-area: classes;
 }
 
 #booking-home {
     background-color: #F2C335;
+    opacity: 0.9;
     margin: 1em;
+    padding: 1em 1em 18em;
     font-size: 15pt;
     grid-area: booking;
 }
 
 #staff-home {
     background-color: #F2C335;
+    opacity: 0.9;
     margin: 1em;
+    padding: 1em 1em 18em;
     font-size: 15pt;
     grid-area: staff;
 }
