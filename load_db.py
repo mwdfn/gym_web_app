@@ -20,6 +20,30 @@ member_repository.save(member_2)
 member_3 = Member("Mark Jones", 28, "Male")
 member_repository.save(member_3)
 
+member_4 = Member("Tina Davies", 61, "Female")
+member_repository.save(member_4)
+
+member_5 = Member("Sam Williams", 42, "Male")
+member_repository.save(member_5)
+
+member_6 = Member("Shani Michael", 36, "Female")
+member_repository.save(member_6)
+
+member_7 = Member("Alivia Williams", 61, "Female")
+member_repository.save(member_7)
+
+member_8 = Member("Tina Davies", 50, "Female")
+member_repository.save(member_8)
+
+member_9 = Member("Merryn Blaese", 21, "Female")
+member_repository.save(member_9)
+
+member_10 = Member("Malcolm Franklin", 33, "Male")
+member_repository.save(member_10)
+
+member_11 = Member("Frederic Duffy", 25, "Female")
+member_repository.save(member_11)
+
 exercise_class_1 = ExerciseClass("Body Attack", "Joe Mills", "18/05/2022", "18:00", "19:00")
 exercise_class_repository.save(exercise_class_1)
 

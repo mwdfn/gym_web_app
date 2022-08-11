@@ -19,14 +19,15 @@
     display: flex;
     align-items: flex-start;
     flex: 2 1 auto;
-    gap: 0.3vh; 
+    flex-wrap: wrap;
+    gap: 1vw;
 }
 
 .tile-info {
     background-color: blue;
-    width: 14vw;
-    height: 15vw;
-    /* margin: 1vw;
-    padding: 1vw; */
+    width: 15vw;
+    height: 16vw;
+    /* margin: 1vw;*/
+    padding: 1vw; 
     grid-area: mInfo;
 }

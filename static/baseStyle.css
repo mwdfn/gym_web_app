@@ -28,11 +28,8 @@
 }
 
 .body-container {
-    grid-area: bodyCon;
     font-size: 2vw;
-    /* display: flex;
-    align-items: flex-start;  */
-    /* gap: 0.3vh;  */
+    overflow: auto;
 }
 
 .base-footer {

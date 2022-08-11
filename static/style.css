@@ -1,12 +1,14 @@
 * {
     font-family: 'Bebas Neue', cursive;
     max-width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
     margin: 0 auto;
     overflow: hidden;
 }
 
 .container1{
+    height: 100%;
+    width: 100%;
     background-image: url("https://images.unsplash.com/photo-1540496905036-5937c10647cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
     background-size: 100%;
     background-repeat: no-repeat;
