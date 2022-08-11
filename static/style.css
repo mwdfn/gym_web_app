@@ -12,7 +12,7 @@
     justify-content: center;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 0.2fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-areas: 
     "header1 header1 header1 header1"
     "homeLink homeLink homeLink homeLink"
@@ -30,13 +30,18 @@
     grid-area: header1; 
 }
 
-.homelinks {
+.home-links {
     padding: 1em;
     padding-top: 1vh;
     padding-bottom: 1vh; 
     width: 100vw;
     height: auto;
     grid-area: homeLink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "member booking classes staff";
 }
 
 .footer1{
@@ -49,33 +54,32 @@
     grid-area: footer1;
 }
 
-#memberhome {
+#member-home {
     background-color: #F2C335;
     margin: 1em;
-    /* float: center; */
     font-size: 15pt;
-
+    grid-area: member;
 }
 
-#classhome {
+#class-home {
     background-color: #F2C335;
     margin: 1em;
-    /* float: center; */
     font-size: 15pt;
+    grid-area: classes;
 }
 
-#bookinghome {
+#booking-home {
     background-color: #F2C335;
     margin: 1em;
-    /* float: center; */
     font-size: 15pt;
+    grid-area: booking;
 }
 
-#staffhome {
+#staff-home {
     background-color: #F2C335;
     margin: 1em;
-    /* float: center; */
     font-size: 15pt;
+    grid-area: staff;
 }
 
 /* base css */
