@@ -18,14 +18,14 @@
     /* grid-area: mtile; */
     display: flex;
     align-items: flex-start;
-    flex: 0 0 auto;
+    flex: 2 1 auto;
     gap: 0.3vh; 
 }
 
 .tile-info {
     background-color: blue;
-    background-size: 10px 5px;
-    border: 1vw solid greenyellow;
+    width: 14vw;
+    height: 15vw;
     /* margin: 1vw;
     padding: 1vw; */
     grid-area: mInfo;
