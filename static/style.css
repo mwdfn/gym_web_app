@@ -33,6 +33,22 @@
     grid-area: header1; 
 }
 
+.logo{
+    padding-top: 1vh;
+    font-size: 4vw;
+}
+
+.footer1{
+    padding: 1vw;
+    background: radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#2c2c2c 4px, transparent 4px) 0px -2px / 29px 29px, linear-gradient(90deg, #2c2c2c 4px, #0d0d0d 4px) -2px 0px / 29px 29px #0d0d0d;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    grid-area: footer1;
+}
+
 .home-links {
     padding: 1vh;
     padding-top: 1vh;
@@ -47,22 +63,15 @@
     "member booking classes staff";
 }
 
-.footer1{
-    padding: 1vw;
-    background: radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 0% 0% / 58px 58px, radial-gradient(circle, transparent 20%, #0d0d0d 20%, #0d0d0d 80%, transparent 80%, transparent) 29px 29px / 58px 58px, linear-gradient(#2c2c2c 4px, transparent 4px) 0px -2px / 29px 29px, linear-gradient(90deg, #2c2c2c 4px, #0d0d0d 4px) -2px 0px / 29px 29px #0d0d0d;
-    background-color: #0d0d0d;
-    color: #ffffff;
-    width: 100vw;
-    height: auto;
-    text-align: center;
-    grid-area: footer1;
+.home-link {
+    font-size: 2vw;
 }
 
 #member-home {
     background-color: #F2C335;
     opacity: 0.9;
     margin: 1em;
-    padding: 1em 1em 18em;
+    padding: 1em 1em 17em;
     font-size: 15pt;
     grid-area: member;
 }
@@ -71,7 +80,7 @@
     background-color: #F2C335;
     opacity: 0.9;
     margin: 1em;
-    padding: 1em 1em 18em;
+    padding: 1em 1em 17em;
     font-size: 15pt;
     grid-area: classes;
 }
@@ -80,7 +89,7 @@
     background-color: #F2C335;
     opacity: 0.9;
     margin: 1em;
-    padding: 1em 1em 18em;
+    padding: 1em 1em 17em;
     font-size: 15pt;
     grid-area: booking;
 }
@@ -89,7 +98,7 @@
     background-color: #F2C335;
     opacity: 0.9;
     margin: 1em;
-    padding: 1em 1em 18em;
+    padding: 1em 1em 17em;
     font-size: 15pt;
     grid-area: staff;
 }
