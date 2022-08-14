@@ -11,7 +11,7 @@
     /* "mInfo mInfo mInfo mInfo mInfo mInfo mInfo mInfo" */
 
 #member-title {
-    /* grid-area: mTitle; */
+    margin: 0vw 10vw 0vw;
 }
 
 .tile {
@@ -21,6 +21,7 @@
     flex: 2 1 auto;
     flex-wrap: wrap;
     gap: 1vw;
+    margin: 0vw 10vw 5vw;
 }
 
 .tile-info {

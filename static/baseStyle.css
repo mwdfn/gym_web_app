@@ -16,7 +16,7 @@
     background-color: #0d0d0d;
     color: #ffffff;
     width: 100vw;
-    height: auto;
+    height: 15vw;
     grid-area: baseHead; 
 }
 
@@ -24,6 +24,7 @@
     display: flex;
     align-items: flex-start;
     font-size: 2vw;
+    margin: 0vw 10vw 10vw 0vw;
 
 }
 
