@@ -32,7 +32,7 @@
     background-color: #0d0d0d;
     color: #ffffff;
     width: 100vw;
-    height: auto;
+    height: 7vw;
     grid-area: header1; 
 }
 
@@ -57,7 +57,7 @@
     padding-top: 1vh;
     padding-bottom: 1vh; 
     width: 100vw;
-    height: auto;
+    height: auto; 
     grid-area: homeLink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -72,11 +72,11 @@
 
 .home-menu {
     font-size: 1.5vw;
+    max-height: 30vh;
 }
 
 #member-home {
     background-color: #F2C335;
-    height: 5vw;
     opacity: 0.9;
     margin: 1em;
     padding: 1em 1em 17em;
@@ -85,7 +85,6 @@
 
 #class-home {
     background-color: #F2C335;
-    height: 5vw;
     opacity: 0.9;
     margin: 1em;
     padding: 1em 1em 17em;
@@ -94,7 +93,6 @@
 
 #booking-home {
     background-color: #F2C335;
-    height: 5vw;
     opacity: 0.9;
     margin: 1em;
     padding: 1em 1em 17em;
@@ -103,7 +101,6 @@
 
 #staff-home {
     background-color: #F2C335;
-    height: 5vw;
     opacity: 0.9;
     margin: 1em;
     padding: 1em 1em 17em;
@@ -111,8 +108,8 @@
 }
 
 /* base css */
-.header{
+/* .header{
     background-color: #0d0d0d;
     color: #ffffff;
-}
+} */
 
