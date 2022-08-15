@@ -1,4 +1,5 @@
 .base-container {
+    overflow: hidden;
     display: grid; 
     justify-content: center;
     grid-template-columns: 1fr;
@@ -22,7 +23,9 @@
 
 .body-container {
     font-size: 2vw;
-    overflow: auto;
+    overflow: scroll;
+    height: 40vw;
+    grid-area: bodyCon;
 }
 
 .base-footer {
