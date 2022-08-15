@@ -1,7 +1,6 @@
 * {
     font-family: 'Bebas Neue', cursive;
     max-width: 100%;
-    /* max-height: 100%; */
     margin: 0 auto;
     list-style: none
 }
@@ -106,10 +105,3 @@
     padding: 1em 1em 17em;
     grid-area: staff;
 }
-
-/* base css */
-/* .header{
-    background-color: #0d0d0d;
-    color: #ffffff;
-} */
-
